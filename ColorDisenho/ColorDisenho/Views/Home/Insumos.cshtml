@@ -1,0 +1,318 @@
+﻿@{
+    ViewData["Title"] = "Insumos";
+}
+
+
+<div class="text-center">
+
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+      
+      <h2>Inventario de Insumos</h2>
+
+			
+      <label for="nombre">Fecha Inicial :</label><br> 
+      <input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31"><br> 
+      <label for="nombre">Fecha Final :</label><br> 
+      <input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31"><br> 
+      <label for="nombre">Tipo de Insumo :</label><br> 
+      <select name="dropdown">
+                <option value="" disabled selected>Insumo: *</option>
+								<option value="Resinas">Resinas</option>
+								<option value="Lentejuelas">Lentejuelas</option>
+								<option value="Arandelas">Arandelas</option>
+              	<option value="zafirados">Taches zafirados</option>
+								<option value="burbuja">Taches burbuja</option>
+								<option value="planos">Taches planos</option>
+                <option value="cuadrados">Taches cuadrados</option>
+								<option value="grabados">Taches grabados</option>
+								<option value="motivos">Taches de motivos</option>
+              	<option value="cristales">Piedras cristales</option>
+								<option value="láser">Corte láser</option>
+								<option value="Pirograbado">Pirograbado</option>
+			</select>
+      <br><br>
+            <td>
+							<button type="button" class="btn btn-success" style="background-color:green; border-color:black">CONSULTAR</button>
+						</td>
+            <td>
+							<button type="button" class="btn btn-success" style="background-color:red; border-color:black">LIMPIAR</button>
+						</td>
+      <br><br>
+      
+			<table class="table table-striped table-sm">
+				<thead>
+					<tr>
+						<th>FECHA-HORA</th>
+						<th>REFERENCIA</th>
+						<th>PRESENTACIÓN</th>
+						<th>TIPO MOVIMIENTO</th>
+						<th>CANT. ANTERIOR</th>
+						<th>CANT. MOVIMIENTO</th>
+            <th>CANT.PRODUCIDA</th>
+						<th>USUARIO</th>
+						<th>OBSERVACIONES</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table-active">
+            <!--FECHA Y HORA-->
+						<td>
+						  <input type="datetime-local" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+            <!--REFERENCIA-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: SKU-caj-Lent">
+						</td>
+            <!--PRESENTACIÓN-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: Caja x100 Lentejuelas">
+						</td>
+            <!--TIPO MOVIMIENTO-->
+						<td>
+							<select name="dropdown">
+                <option value="" disabled selected>Seleccione una opción</option>
+								<option value="CORTE">Salida</option>
+								<option value="SUBLIMACIÓN">Entrada</option>
+								<option value="ENSAMBLE">Ajuste</option>
+							</select>
+						</td>
+            <!--CANTIDAD ANTERIOR-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--CANTIDAD MOVIMIENTO-->
+						<td>
+              <input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+            </td>
+            <!--CANTIDAD PRODUCIDA-->
+            <td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--USUARIO-->
+            <td>
+							<input type="text" name="destinatario" placeholder="USUARIO">
+						</td>
+            <!--OBSERVACIONES-->
+            <td>
+							<textarea name="comment" rows=5 cols=40>
+              </textarea>
+						</td>
+					</tr>
+          
+					<tr class="table-active">
+						<!--FECHA Y HORA-->
+						<td>
+						  <input type="datetime-local" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+            <!--REFERENCIA-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: SKU-caj-Lent">
+						</td>
+            <!--PRESENTACIÓN-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: Caja x100 Lentejuelas">
+						</td>
+            <!--TIPO MOVIMIENTO-->
+						<td>
+							<select name="dropdown">
+                <option value="" disabled selected>Seleccione una opción</option>
+								<option value="CORTE">Salida</option>
+								<option value="SUBLIMACIÓN">Entrada</option>
+								<option value="ENSAMBLE">Ajuste</option>
+							</select>
+						</td>
+            <!--CANTIDAD ANTERIOR-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--CANTIDAD MOVIMIENTO-->
+						<td>
+              <input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+            </td>
+            <!--CANTIDAD PRODUCIDA-->
+            <td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--USUARIO-->
+            <td>
+							<input type="text" name="destinatario" placeholder="USUARIO">
+						</td>
+            <!--OBSERVACIONES-->
+            <td>
+							<textarea name="comment" rows=5 cols=40>
+              </textarea>
+						</td>
+					</tr>
+
+					<tr class="table-active">
+						<!--FECHA Y HORA-->
+						<td>
+						  <input type="datetime-local" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+            <!--REFERENCIA-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: SKU-caj-Lent">
+						</td>
+            <!--PRESENTACIÓN-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: Caja x100 Lentejuelas">
+						</td>
+            <!--TIPO MOVIMIENTO-->
+						<td>
+							<select name="dropdown">
+                <option value="" disabled selected>Seleccione una opción</option>
+								<option value="CORTE">Salida</option>
+								<option value="SUBLIMACIÓN">Entrada</option>
+								<option value="ENSAMBLE">Ajuste</option>
+							</select>
+						</td>
+            <!--CANTIDAD ANTERIOR-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--CANTIDAD MOVIMIENTO-->
+						<td>
+              <input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+            </td>
+            <!--CANTIDAD PRODUCIDA-->
+            <td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--USUARIO-->
+            <td>
+							<input type="text" name="destinatario" placeholder="USUARIO">
+						</td>
+            <!--OBSERVACIONES-->
+            <td>
+							<textarea name="comment" rows=5 cols=40>
+              </textarea>
+						</td>
+					</tr>
+          
+          					<tr class="table-active">
+						<!--FECHA Y HORA-->
+						<td>
+						  <input type="datetime-local" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+            <!--REFERENCIA-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: SKU-caj-Lent">
+						</td>
+            <!--PRESENTACIÓN-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: Caja x100 Lentejuelas">
+						</td>
+            <!--TIPO MOVIMIENTO-->
+						<td>
+							<select name="dropdown">
+                <option value="" disabled selected>Seleccione una opción</option>
+								<option value="CORTE">Salida</option>
+								<option value="SUBLIMACIÓN">Entrada</option>
+								<option value="ENSAMBLE">Ajuste</option>
+							</select>
+						</td>
+            <!--CANTIDAD ANTERIOR-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--CANTIDAD MOVIMIENTO-->
+						<td>
+              <input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+            </td>
+            <!--CANTIDAD PRODUCIDA-->
+            <td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--USUARIO-->
+            <td>
+							<input type="text" name="destinatario" placeholder="USUARIO">
+						</td>
+            <!--OBSERVACIONES-->
+            <td>
+							<textarea name="comment" rows=5 cols=40>
+              </textarea>
+						</td>
+					</tr>
+          
+          					<tr class="table-active">
+						<!--FECHA Y HORA-->
+						<td>
+						  <input type="datetime-local" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+            <!--REFERENCIA-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: SKU-caj-Lent">
+						</td>
+            <!--PRESENTACIÓN-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ej: Caja x100 Lentejuelas">
+						</td>
+            <!--TIPO MOVIMIENTO-->
+						<td>
+							<select name="dropdown">
+                <option value="" disabled selected>Seleccione una opción</option>
+								<option value="CORTE">Salida</option>
+								<option value="SUBLIMACIÓN">Entrada</option>
+								<option value="ENSAMBLE">Ajuste</option>
+							</select>
+						</td>
+            <!--CANTIDAD ANTERIOR-->
+						<td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--CANTIDAD MOVIMIENTO-->
+						<td>
+              <input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+            </td>
+            <!--CANTIDAD PRODUCIDA-->
+            <td>
+							<input type="text" name="destinatario" placeholder="Ingrese la cantidad">
+						</td>
+            <!--USUARIO-->
+            <td>
+							<input type="text" name="destinatario" placeholder="USUARIO">
+						</td>
+            <!--OBSERVACIONES-->
+            <td>
+							<textarea name="comment" rows=5 cols=40>
+              </textarea>
+						</td>
+					</tr>
+          
+				</tbody>
+			</table>
+			<nav>
+				<ul class="pagination">
+					<li class="page-item">
+						<a class="page-link" href="#">Anterior</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">1</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">4</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Siguiente</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+   
+
+

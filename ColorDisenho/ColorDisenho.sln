@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorDisenho", "ColorDisenho\ColorDisenho.csproj", "{80140535-21B4-4A08-8D81-1223DC4FB87E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80140535-21B4-4A08-8D81-1223DC4FB87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80140535-21B4-4A08-8D81-1223DC4FB87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80140535-21B4-4A08-8D81-1223DC4FB87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80140535-21B4-4A08-8D81-1223DC4FB87E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BEB1CF2-6311-4760-A169-182B6386F1B6}
+	EndGlobalSection
+EndGlobal

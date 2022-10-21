@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Actualizar Estado-Area";
+}
+
+
+<div class="text-center">
+
+    <h1>@ViewData["Title"]</h1>
+        
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-striped table-sm">
+				<thead>
+					<tr>
+						<th>PEDIDO N°</th>
+						<th>FECHA CREACIÓN</th>
+						<th>FECHA ESTIMADA DE ENTREGA</th>
+						<th>AREA</th>
+						<th>ESTADO</th>
+						<th>TOTAL PAGADO</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table-active">
+						<td>1</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+						<td>
+							<select name="dropdown">
+								<option value="CORTE" selected>CORTE</option>
+								<option value="SUBLIMACIÓN">SUBLIMACIÓN</option>
+								<option value="ENSAMBLE">ENSAMBLE</option>
+							</select>
+						</td>
+						<td>
+							<select name="dropdown">
+								<option value="INICIO" selected>INICIO</option>
+								<option value="PROCESO">PROCESO</option>
+								<option value="FINALIZADO">FINALIZADO</option>
+							</select>
+						</td>
+						<td>defecto</td>
+						<td>
+							<button type="button" class="btn btn-success" style="background-color:green; border-color:black">GUARDAR</button>
+						</td>
+					</tr>
+
+
+					<tr class="table-active">
+						<td>2</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+						<td>
+							<select name="dropdown">
+								<option value="CORTE" selected>CORTE</option>
+								<option value="SUBLIMACIÓN">SUBLIMACIÓN</option>
+								<option value="ENSAMBLE">ENSAMBLE</option>
+							</select>
+						</td>
+						<td>
+							<select name="dropdown">
+								<option value="INICIO" selected>INICIO</option>
+								<option value="PROCESO">PROCESO</option>
+								<option value="FINALIZADO">FINALIZADO</option>
+							</select>
+						</td>
+						<td>defecto</td>
+						<td>
+							<button type="button" class="btn btn-success" style="background-color:green; border-color:black">GUARDAR</button>
+						</td>
+
+					</tr>
+
+					<tr class="table-active">
+						<td>3</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31">
+						</td>
+						<td>
+							<select name="dropdown">
+								<option value="CORTE" selected>CORTE</option>
+								<option value="SUBLIMACIÓN">SUBLIMACIÓN</option>
+								<option value="ENSAMBLE">ENSAMBLE</option>
+							</select>
+						</td>
+						<td>
+							<select name="dropdown">
+								<option value="INICIO" selected>INICIO</option>
+								<option value="PROCESO">PROCESO</option>
+								<option value="FINALIZADO">FINALIZADO</option>
+							</select>
+						</td>
+						<td>defecto</td>
+						<td>
+							<button type="button" class="btn btn-success" style="background-color:green; border-color:black">GUARDAR</button>
+						</td>
+
+					</tr>
+				</tbody>
+			</table>
+			<div class="alert alert-success alert-dismissable">
+				<div style="text-align: Right;">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true" style="text-align: center;">×</button>
+				</div>
+				<h4>
+					¡Alerta!
+				</h4> <strong>¡Advertencia!</strong> Verifique la información ingresada antes de oprimir guardar. <a href="#" class="alert-link">enlace de alerta</a>
+			</div>
+
+			<nav>
+				<ul class="pagination">
+					<li class="page-item">
+						<a class="page-link" href="#">Anterior</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">1</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">4</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Siguiente</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+			<div class="text-center">
+            <a class="btn btn-success btn-block mb-4" href="https://localhost:7137/Home/MenuAdmin">
+                Regresar
+            </a>
+        </div>
+		</div>
+	</div>
+</div>
+
