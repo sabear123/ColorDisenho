@@ -48,6 +48,30 @@ namespace ColorDisenho.Controllers
             return View();
         }
 
+        public IActionResult MenuUsuario()
+        {
+            return View();
+        }
+
+        public IActionResult CrearPedido()
+        {
+            return View();
+        }
+        public IActionResult CancelarPedido()
+        {
+            return View();
+        }
+
+        public IActionResult GenerarReportesStock()
+        {
+            return View();
+        }
+
+        public IActionResult ModificarPedido()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

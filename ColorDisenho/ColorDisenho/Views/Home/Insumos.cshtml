@@ -3,7 +3,7 @@
 }
 
 
-<div class="text-center">
+
 
     <h1>@ViewData["Title"]</h1>
 
@@ -12,12 +12,7 @@
 		<div class="col-md-12">
       
       <h2>Inventario de Insumos</h2>
-
-			
-      <label for="nombre">Fecha Inicial :</label><br> 
-      <input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31"><br> 
-      <label for="nombre">Fecha Final :</label><br> 
-      <input type="date" id="start" name="trip-start" value="date" min="2022-10-20" max="2025-12-31"><br> 
+     
       <label for="nombre">Tipo de Insumo :</label><br> 
       <select name="dropdown">
                 <option value="" disabled selected>Insumo: *</option>
@@ -308,9 +303,16 @@
 				</ul>
 			</nav>
 			</div>
+
+			<a class="btn btn-success btn-block mb-4" href="https://localhost:7137/Home/MenuAdmin">
+                Regresar
+            </a>
+			<a class="btn btn-primary btn-block mb-4" href="https://localhost:7137/Home/MenuAdmin">
+                Guardar
+            </a>
 		</div>
 	</div>
-</div>
+
 
     
    
